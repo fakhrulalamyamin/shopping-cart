@@ -42,6 +42,8 @@ const handelCountChange = (product, isIncrease) => {
     };
 
     productPrice.innerText = price;
+
+    calcTotal();
 };
 
 const calcTotal = () => {
@@ -55,20 +57,16 @@ const calcTotal = () => {
 
 phoneIncrement.addEventListener('click', () => {
     handelCountChange('phone', true);
-    calcTotal();
 });
 
 phoneDecrement.addEventListener('click', () => {
     handelCountChange('phone', false);
-    calcTotal();
 });
 
 caseIncrement.addEventListener('click', () => {
     handelCountChange('case', true);
-    calcTotal();
 });
 
 caseDecrement.addEventListener('click', () => {
     handelCountChange('case' ,false);
-    calcTotal();
 });
